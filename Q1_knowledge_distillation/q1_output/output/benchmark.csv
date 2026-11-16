@@ -1,0 +1,7 @@
+model,variant,params_million,checkpoint_size_mb,onnx_size_mb,onnx_test_accuracy,pytorch_cpu_latency_ms,onnx_cpu_latency_ms
+mobilenetv2,baseline,2.352,9.66,9.38,73.89,7.36,1.35
+mobilenetv2,kd,2.352,9.65,9.38,72.52,7.69,1.19
+squeezenet,baseline,0.774,3.12,3.11,62.24,4.91,0.77
+squeezenet,kd,0.774,3.12,3.11,1.0,3.29,0.74
+efficientnet_lite0,baseline,3.499,14.28,13.95,74.57,8.71,1.53
+efficientnet_lite0,kd,3.499,14.28,13.95,76.87,12.43,2.24

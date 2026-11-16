@@ -1,0 +1,2 @@
+model,params_million,checkpoint_size_mb,onnx_size_mb,pytorch_test_accuracy,onnx_test_accuracy,pytorch_cpu_latency_ms,onnx_cpu_latency_ms,meets_constraints
+nas_best,0.095,0.408,0.385,85.51,85.51,2.076,0.403,True

@@ -1,0 +1,65 @@
+{
+  "architecture": {
+    "resolution": 32,
+    "stem_channels": 24,
+    "blocks": [
+      {
+        "out_channels": 128,
+        "kernel_size": 3,
+        "block_type": "depthwise_separable",
+        "activation": "silu",
+        "stride": 2
+      },
+      {
+        "out_channels": 128,
+        "kernel_size": 7,
+        "block_type": "depthwise_separable",
+        "activation": "silu",
+        "stride": 1
+      },
+      {
+        "out_channels": 32,
+        "kernel_size": 7,
+        "block_type": "depthwise_separable",
+        "activation": "relu",
+        "stride": 1
+      },
+      {
+        "out_channels": 48,
+        "kernel_size": 5,
+        "block_type": "standard",
+        "activation": "relu6",
+        "stride": 2
+      },
+      {
+        "out_channels": 24,
+        "kernel_size": 7,
+        "block_type": "depthwise_separable",
+        "activation": "relu",
+        "stride": 2
+      },
+      {
+        "out_channels": 24,
+        "kernel_size": 5,
+        "block_type": "standard",
+        "activation": "silu",
+        "stride": 2
+      }
+    ]
+  },
+  "search_metrics": {
+    "candidate_id": 71,
+    "generation": 6,
+    "resolution": 32,
+    "num_blocks": 6,
+    "params_million": 0.095,
+    "latency_ms": 2.031,
+    "model_size_mb": 0.4052,
+    "peak_memory_mb": 0.213,
+    "feasible": true,
+    "reject_reason": "",
+    "val_accuracy": 73.86,
+    "fitness": 0.7183146175001519,
+    "train_seconds": 16.9
+  }
+}
